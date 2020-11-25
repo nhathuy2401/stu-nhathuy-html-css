@@ -1,0 +1,379 @@
+
+*{
+    margin : 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.nav-bar{
+    height:50px;
+    width:100vw;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid #041374;
+}
+.left-bar{
+    flex : 0.5 ; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-direction: row;
+   
+
+
+}
+.fb-logo{
+    width: 40px;
+    height: 40px;
+    margin-left:20px ;
+}
+.fb-search{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius:100px ;
+}
+.right-bar{ 
+    flex : 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+.account{
+    width: 40px;
+    height: 40px;
+    margin-left:20px ;
+}
+.message{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    
+}   
+.notification{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+   
+}   
+.plus{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+   
+}   
+.icon{
+    margin-right: 10px;
+   
+}
+.mid-bar{
+    flex : 0.5 ; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+}
+.home{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+} 
+
+.watch{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    
+} 
+.market{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+     
+} 
+.group{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+   
+} 
+.icon-bg-color{
+    background-color: #F5F5F5;
+}
+.main-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: auto;
+    flex-wrap: nowrap;
+    padding : 20px 20px;
+}
+
+.main-content .menu{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.main-content .menu .menu-item{
+    width: 100%;
+    margin-left: auto;
+}
+.main-content .menu .menu-item .user .profile{
+    width: 35px;
+    height: 35px;
+}
+.user .profile , .item-row .icon  {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   
+}
+.item-row .icon {
+    display: flex ; 
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.user h4{
+    color: black;
+    font-weight: 400;
+    font-size: 0.88rem;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.item-row h4{
+    color: black;
+    font-weight: 400;
+    font-size: 0.88rem;
+    margin: 10px;
+    text-transform: capitalize;
+
+}
+.user .profile img{
+    width: 100%;
+    height: 33px;
+    object-fit: cover;  
+    border-radius: 50%;   
+}
+
+.user , .item-row{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top:6px ;
+    position: relative;
+    flex-shrink: 0;
+}
+.item-row{
+    margin-top:15px;
+}
+.main-content .menu .second-col .menu-item .item-row .icon{
+    height: 35px;
+    width:35px;
+    margin-right: 5px;
+}
+.main{
+    width: 50%;
+    padding: 0px 30px;
+    position: relative;
+    
+}
+.main .stories{
+    position: relative;
+
+}
+.main .stories .owl-controls{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index:10;
+    pointer-events: none;
+}
+.main .stories .owl-controls .controllers {
+    position: absolute;
+    z-index: 10;
+    background-color: #164077;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    right: -25px;
+    top:74%;
+    pointer-events: visible;
+    cursor: pointer;
+}
+.main .stories .owl-controls .controllers img{
+    height: 30%;
+    width: 30%;
+}
+.main .stories .item{
+    height: 32vh;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main .stories  .item .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: 1;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.main .stories .item .overlay .person .profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid blue;
+} 
+.main .stories .item .overlay .person .profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main .stories .item .overlay h4{
+    color : white ; 
+    font-weight: 500;
+    font-size: 0.88rem;
+    width: 80%;
+    margin-left: 5px;
+
+}
+.main .stories .item .story-image{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.main .stories .item .story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.main .stories .item .overlay.first{
+    padding: 0;
+}
+.main .view .view-post-container{
+    padding-bottom: 20px;
+}
+.main .view .smaller-margin{
+    margin-top:15px;
+}
+
+
+.main .create-post  ,.main .view{
+ margin-top:50px;
+ padding: 20px 20px 0 20px;
+ border-radius: 10px;
+}
+.main .create-post .input{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main .create-post .input input {
+    margin-left: 10px;
+    border-radius: 100px;
+    padding: 12px;
+    border: solid ;
+    width: 100%;
+}
+
+.main .create-post .media{
+    border-top: 1px solid black;
+    padding: 20px 30px;
+    margin-top:20px ;   
+}
+
+
+.main .create-post .media .category {
+    justify-content: space-between;
+    
+}
+.main .create-post .media .category , .main .create-post .media .category .option{
+display: flex;
+align-items: center;
+}
+
+
+h6.title{
+    font-weight: 500;
+    font-size: 1em;
+    color: black;
+    text-transform: capitalize;
+    
+}
+.main .view .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .view .view-post .upper .d-flex{
+    display: flex;
+    align-items: center;
+}
+.main .view .view-post .upper .d-flex .user{
+    margin-top: 3px;
+}
+.main .view .view-post .upper .d-flex .info{
+    margin-left: 10px;
+}
+.main .view .view-post .upper .d-flex .info h6{
+    color : black ;
+    font-size: 0.99rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.main .view .view-post .upper .d-flex .info span{
+    font-size: 0.77rem;
+
+}
+.main .view .view-post .post-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top:10px;
+}
+.main .view .view-post .action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main  .view .view-post .action-container .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    flex:1;
+}
+.main .view .view-post .action-container .acction .icon{
+    height: 20px;
+    width: 20px;
+}
+.main .view .view-post .write-comment{
+    padding-bottom: 10px 0 0 0 ;
+    margin : 10px 0 0 0 ;
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+
